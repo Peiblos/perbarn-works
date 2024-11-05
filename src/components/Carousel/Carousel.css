@@ -1,0 +1,41 @@
+/* Carousel.css */
+.carousel {
+    position: relative;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    border: 5px solid red;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Efecto suave de transición */
+}
+
+.carousel-item {
+    min-width: 100%; /* Cada elemento ocupa el 100% del contenedor */
+    transition: opacity 1s ease; /* Suaviza la transición de opacidad */
+}
+
+.carousel img {
+    width: 100%; /* Asegúrate de que la imagen ocupa todo el espacio */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* Tamaño de las flechas */
+}
+
+.prev {
+    left: 10px; /* Ubicación de la flecha izquierda */
+}
+
+.next {
+    right: 10px; /* Ubicación de la flecha derecha */
+}

@@ -1,0 +1,45 @@
+/* Request.css */
+
+.quote-request {
+    background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 50px 20px; /* Espaciado interior */
+    text-align: center; /* Centrar texto */
+    margin: 50px auto; /* Centrar el componente horizontalmente */
+    max-width: 800px; /* Limitar el ancho máximo para pantallas grandes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+}
+
+.quote-request:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+.quote-request h2 {
+    font-size: 2rem; /* Tamaño de fuente mayor para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333; /* Color del texto */
+}
+
+.quote-request p {
+    font-size: 1.1rem; /* Tamaño de fuente para el texto */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #666; /* Color del texto más claro */
+}
+
+.quote-request button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.quote-request button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
