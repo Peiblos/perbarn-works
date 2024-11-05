@@ -1,0 +1,26 @@
+/* Reset básico */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos de la página completa */
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+  } */
+
+/* Configuración para que el footer esté al final */
+footer {
+  background-color: #002060;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%; /* Ocupa todo el ancho */
+  margin-top: auto; /* Empuja el footer al final */
+}

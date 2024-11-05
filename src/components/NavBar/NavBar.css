@@ -1,0 +1,145 @@
+/* Reset básico */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* Ajuste para el body para eliminar márgenes y asegurar el ancho completo */
+  /* body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  /* Estilos de la barra de navegación */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #003366;
+    color: #ffffff; /* Texto blanco */
+    /*Navbar se queda fijo en la parte superior*/
+    position:absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa el ancho completo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  /* Justificación izquierda en pantallas grandes */
+@media (min-width: 769px) {
+    .navbar-logo {
+      text-align: left; /* Alinea el logo a la izquierda en pantalla grande */
+      flex-grow: 0;     /* Evita que ocupe el espacio central */
+      margin-right: auto; /* Mueve el logo a la izquierda */
+    }
+  }
+  
+  /* Links y botón en desktop */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-links ul li {
+    margin-right: 1rem;
+  }
+  
+  .navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #66a3ff; /* Color de hover en azul claro */
+  }
+  
+  /* Botón de solicitar presupuesto */
+  .navbar-button {
+    padding: 0.5rem 1rem;
+    background-color: #0059b3; 
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-button:hover {
+    background-color: #4da6ff; 
+  }
+
+  /* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+    .navbar-hamburger {
+      display: none; /* Oculta el menú hamburguesa en pantallas grandes */
+    }
+  }
+  
+  /* Estilos para móviles y tabletas */
+  @media (max-width: 768px) {
+    .navbar-logo {
+      order: 1;
+      flex-grow: 1;
+    }
+  
+    /* Ocultar links y mostrar hamburguesa */
+    .navbar-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #003366; 
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-links ul {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .navbar-links ul li {
+      margin: 0.5rem 0;
+    }
+  
+    /* Botón de menú hamburguesa */
+    .navbar-hamburger {
+      display: flex;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: #ffffff;
+      padding-right: 1rem;
+    }
+  
+    /* Ocultar el botón de presupuesto en modo móvil */
+    .navbar-button {
+      display: none;
+    }
+  }
+  

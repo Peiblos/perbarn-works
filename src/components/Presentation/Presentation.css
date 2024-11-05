@@ -1,0 +1,42 @@
+/* Presentation.css */
+
+.presentation {
+    /* background-color: #d1cfcf; */
+    background-color: #628af8;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 50px auto; /* Ajustar márgenes para centrar el contenido */
+    max-width: 1200px; /* Limitar el ancho máximo para pantallas grandes */
+    border-radius: 10px; /* Bordes redondeados para mejorar el diseño */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra inicial para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+.presentation:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+    transform: scale(1.05);
+}
+
+.presentation h2 {
+    font-size: 2rem; /* Tamaño de fuente mayor para el título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.presentation-content {
+    display: flex; /* Hacer que el contenido sea flexible */
+    justify-content: space-between; /* Espaciar el texto y la imagen */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.presentation p {
+    font-size: 1.1rem; /* Tamaño de fuente ajustado para el texto */
+    margin: 0; /* Eliminar margen superior e inferior */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    max-width: 60%; /* Limitar el ancho del texto para no extenderse demasiado */
+}
+
+.presentation img {
+    max-width: 30%; /* Hacer la imagen responsiva y limitar su tamaño */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
