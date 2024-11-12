@@ -3,8 +3,9 @@
     position: relative;
     overflow: hidden; /* Oculta el contenido que se desborda */
     width: 100%; /* Ajusta el ancho según tus necesidades */
-    height: 400px; /* Ajusta la altura según tus necesidades */
-    border: 5px solid red;
+    height: 800px; /* Ajusta la altura según tus necesidades */
+    /* border: 5px solid red; */
+    margin-top: 115px;
 }
 
 .carousel-inner {
@@ -22,7 +23,7 @@
     height: auto; /* Mantiene la relación de aspecto */
 }
 
-.carousel-control {
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -39,3 +40,9 @@
 .next {
     right: 10px; /* Ubicación de la flecha derecha */
 }
+
+@media (max-width: 1200px) {
+    .carousel {
+      height: 100%;
+    }
+  }

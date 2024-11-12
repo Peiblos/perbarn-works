@@ -6,9 +6,20 @@
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente fila si no hay suficiente espacio */
     justify-content: space-around; /* Espaciado uniforme entre los elementos */
     margin: 100px auto; /* Auto para centrar en pantallas grandes */
-    padding: 60px 30px;
-    border: 5px solid red;
-    max-width: 1200px; /* Establecer un ancho máximo, ajustable según el diseño */
+    /* padding: 60px 30px; */
+    /* border: 5px solid red; */
+    max-width: auto; /* Establecer un ancho máximo, ajustable según el diseño */
+    gap: 20px;
+    background-color: rgb(94, 135, 197);
+    padding: 90px;
+    /* margin: 10px; */
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.service-icon{
+    width: 150px;
 }
 
 /* Estilo de cada elemento de servicio */
@@ -18,15 +29,21 @@
     align-items: center; /* Centrar verticalmente */
     flex-direction: column;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px; /* Ajusta el padding si es necesario */
-    width: 150px; /* Ancho fijo */
-    height: 150px; /* Altura fija para mantener la forma cuadrada */
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Altura fija para mantener la forma cuadrada */
     margin: 10px; /* Espacio entre elementos */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 50%; /* Hace que el borde sea circular */
     overflow: hidden; /* Evitar que el texto se salga del círculo */
+    /* background-color: rgb(53, 140, 240); */
+    
 }
+
+/* .service-item img{
+    color: blue;
+} */
 
 /* Efecto hover */
 .service-item:hover {
@@ -42,7 +59,7 @@
 /* Ajustes para el tamaño de la fuente */
 .service-item h3 {
     margin-top: 10px;
-    font-size: 14px; /* Tamaño de fuente para pantallas pequeñas */
+    font-size: 20px; /* Tamaño de fuente para pantallas pequeñas */
     line-height: 1.2; /* Mejora la legibilidad */
     text-overflow: ellipsis; /* Añadir puntos suspensivos si el texto es demasiado largo */
     white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
@@ -51,20 +68,36 @@
 
 /* Media Queries para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
-    .service-item {
-        width: 120px; /* Ajusta el ancho para tablets */
-        height: 120px; /* Ajusta la altura para tablets */
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
+    .service-item {
+        width: 300px; /* Ajusta el ancho para tablets */
+        height: 300px; /* Ajusta la altura para tablets */
+    }
+    .service-item img{
+        width: 150px;
+    }
     .service-item h3 {
-        font-size: 12px; /* Tamaño de fuente aún más pequeño para tablets */
+        font-size: 20px; /* Tamaño de fuente aún más pequeño para tablets */
     }
 }
 
 @media (max-width: 480px) {
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .service-item {
-        width: 100px; /* Ajusta el ancho para móviles */
-        height: 100px; /* Ajusta la altura para móviles */
+        width: 200px; /* Ajusta el ancho para móviles */
+        height: 200px; /* Ajusta la altura para móviles */
+    }
+    .service-item img{
+        width: 100px;
     }
 
     .service-item h3 {
