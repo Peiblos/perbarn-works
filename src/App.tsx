@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Carousel/>
+      <Carousel />
       <Services/>
       <Presentation/>
       <Request/>

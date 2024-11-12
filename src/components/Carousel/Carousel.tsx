@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Carousel.css';
+// import { imagesList } from '../../assets/data/sliderData.js';
 
 interface Image {
   src: string;
@@ -8,9 +9,13 @@ interface Image {
 
 const Carousel: React.FC = () => {
   const images: Image[] = [
-    { src: '/assets/foto1.jpg', alt: 'Imagen de reforma' },
-    { src: '/assets/foto2.jpg', alt: 'Imagen de baño' },
-    { src: '/assets/foto3.jpg', alt: 'Imagen de cocina' },
+    { src: '/assets/data/foto1.jpg', alt: 'Imagen de reforma' },
+    { src: '/assets/data/foto2.jpg', alt: 'Imagen de baño' },
+    { src: '/assets/data/foto3.jpg', alt: 'Imagen de cocina' },
+    { src: '/assets/data/foto4.jpg', alt: 'Imagen de cocina' },
+    { src: '/assets/data/foto5.jpg', alt: 'Imagen de cocina' },
+    { src: '/assets/data/foto6.jpg', alt: 'Imagen de cocina' },
+    // { src: '/assets/data/foto8.jpg', alt: 'Imagen de cocina' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);

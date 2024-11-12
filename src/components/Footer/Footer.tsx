@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>&copy; 2024 Reformas XYZ. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Perbarn. Todos los derechos reservados.</p>
     </footer>
   );
 };

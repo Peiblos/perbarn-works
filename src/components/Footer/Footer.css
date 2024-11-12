@@ -17,10 +17,16 @@
 
 /* Configuración para que el footer esté al final */
 footer {
+  display: flex;
+  justify-content: center;
   background-color: #002060;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 50px;
+  /* height: 100%; */
+  margin-top: auto;
+   /*Empuja el footer al final */
   width: 100%; /* Ocupa todo el ancho */
-  margin-top: auto; /* Empuja el footer al final */
+  position: absolute;
+  left: 0;
 }
