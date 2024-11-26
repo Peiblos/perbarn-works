@@ -25,6 +25,7 @@
     top: 0;
     left: 0;
     width: 100%; /* Ocupa el ancho completo */
+    height: 115px;
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
   }
   
@@ -55,7 +56,8 @@
   .navbar-links ul {
     display: flex;
     list-style: none;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   
   .navbar-links ul li {
@@ -74,7 +76,7 @@
   
   /* Botón de solicitar presupuesto */
   .navbar-button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     background-color: #0059b3; 
     border: none;
     border-radius: 5px;
@@ -106,7 +108,7 @@
     .navbar-links {
       display: none;
       position: absolute;
-      top: 60px;
+      top: 115px;
       left: 0;
       right: 0;
       background-color: #003366; 
@@ -122,6 +124,10 @@
     .navbar-links ul {
       flex-direction: column;
       margin: 0;
+    }
+
+    .navbar-links ul li:hover {
+      color: #4da6ff;
     }
   
     .navbar-links ul li {
@@ -140,6 +146,12 @@
     /* Ocultar el botón de presupuesto en modo móvil */
     .navbar-button {
       display: none;
+    }
+
+    @media (max-width: 480px) {
+      h1{
+        font-size: 1em;
+      }
     }
   }
   

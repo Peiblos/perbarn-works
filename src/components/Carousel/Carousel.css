@@ -6,9 +6,17 @@
     height: 800px; /* Ajusta la altura según tus necesidades */
     /* border: 5px solid red; */
     margin-top: 115px;
+
+    /* position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-top: 115px; */
 }
 
-.carousel-inner {
+.carousel-container {
     display: flex;
     transition: transform 0.5s ease; /* Efecto suave de transición */
 }
@@ -20,7 +28,9 @@
 
 .carousel img {
     width: 100%; /* Asegúrate de que la imagen ocupa todo el espacio */
-    height: auto; /* Mantiene la relación de aspecto */
+    height: 100%; /* Mantiene la relación de aspecto */
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .carousel-btn {
@@ -30,7 +40,7 @@
     background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
     border: none;
     cursor: pointer;
-    font-size: 2rem; /* Tamaño de las flechas */
+    font-size: 1.5rem; /* Tamaño de las flechas 2rem */
 }
 
 .prev {
